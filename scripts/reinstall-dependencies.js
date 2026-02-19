@@ -29,9 +29,9 @@ for (const lockFile of lockFiles) {
   }
 }
 
-console.log('\nInstalling dependencies with pnpm...');
+console.log('\nInstalling dependencies with npm...');
 try {
-  execSync('pnpm install', { stdio: 'inherit', cwd: projectRoot });
+  execSync('npm install', { stdio: 'inherit', cwd: projectRoot });
   console.log('\n✓ Dependencies reinstalled successfully!');
 } catch (error) {
   console.error('Error installing dependencies:', error.message);
