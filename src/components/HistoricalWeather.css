@@ -1,0 +1,7 @@
+.historical-weather {
+  padding: 1.5rem;
+}
+
+.historical-weather input[type="date"] {
+  min-width: 160px;
+}

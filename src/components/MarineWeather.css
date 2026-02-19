@@ -1,0 +1,7 @@
+.marine-weather {
+  padding: 1.5rem;
+}
+
+.marine-weather .weather-hero .desc {
+  text-transform: capitalize;
+}

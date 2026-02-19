@@ -1,0 +1,13 @@
+.current-weather {
+  padding: 1.5rem;
+}
+
+.current-weather .weather-hero .temp {
+  font-size: 2.75rem;
+}
+
+@media (min-width: 600px) {
+  .current-weather .weather-hero .temp {
+    font-size: 3rem;
+  }
+}
