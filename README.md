@@ -46,6 +46,25 @@ Remove-Item -Recurse -Force .vite -ErrorAction SilentlyContinue
 npm run dev
 ```
 
+## Vercel Deployment
+
+### Setting Environment Variables in Vercel
+
+**IMPORTANT:** The `.env` file is not committed to Git for security. You must set the environment variable in Vercel:
+
+1. Go to your Vercel project dashboard: https://vercel.com/dashboard
+2. Click on your project (`Weather-app` or `v0-weather-app`)
+3. Go to **Settings** → **Environment Variables**
+4. Click **Add New**
+5. Add the following:
+   - **Name:** `VITE_WEATHERSTACK_API_KEY`
+   - **Value:** `8e1ed9f0246e8ec31a58087eddcc811c`
+   - **Environment:** Select all three (Production, Preview, Development)
+6. Click **Save**
+7. **Redeploy** your project (go to Deployments → click the three dots → Redeploy)
+
+After redeploying, the API key will be available and weather requests will work!
+
 ## API Notes
 
 - **Current Weather**: Available on Free plan
